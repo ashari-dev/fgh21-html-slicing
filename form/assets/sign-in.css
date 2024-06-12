@@ -1,0 +1,125 @@
+@font-face {
+  font-family: poppins;
+  src: url(../assets/Poppins.woff);
+}
+
+body {
+  font-family: poppins;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+}
+
+.container .wallpaper {
+  display: flex;
+  width: 60%;
+  background-color: #27374d;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .wallpaper img {
+  width: 300px;
+  height: 300px;
+}
+
+.container .main {
+  justify-content: center;
+  padding: 70px 50px;
+}
+
+.container .main img {
+  width: 47.5px;
+  height: 50px;
+}
+
+.container .main .wetick {
+  color: #27374d;
+  font-size: 24px;
+}
+
+.container .main .tick {
+  color: #526d82;
+}
+
+.container .main .sign-in {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #373a42;
+}
+
+.container .main .welcome {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #373a42;
+}
+
+.container .main .form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container .main .form input {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: 1px solid #c1c5d0;
+  border-radius: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.container .main .forgot {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #27374d;
+  text-align: right;
+}
+/* .container .main .forgot a{
+  
+} */
+
+.container .main .button {
+  background-color: #27374d;
+  color: white;
+  box-shadow: 0px 8px 10px 0px #9db2bf;
+  border: none;
+  width: 100%;
+  border-radius: 15px;
+  padding: 10px 30px;
+  margin-top: 20px;
+}
+
+.container .main .or-sign {
+  margin-top: 20px;
+  text-align: center;
+  color: #373a42;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.container .main .logo-alt {
+  margin-top: 5px;
+  justify-content: center;
+  display: flex;
+}
+
+.container .main .logo-alt img {
+  width: 20px;
+  height: 20px;
+  padding: 10px 30px;
+  border: 1px solid #27374d;
+  border-radius: 10px;
+}
+.container .main .logo-alt img:hover {
+  background-color: #27374d;
+}
