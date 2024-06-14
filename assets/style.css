@@ -13,7 +13,7 @@
 body {
   font-family: poppins;
   margin: 0;
-  background-color: #ffffff;
+  background-color: #f4f7ff;
 }
 .img-hero {
   display: flex;
@@ -22,6 +22,9 @@ body {
 .hero {
   background-color: #3366ff;
   height: 750px;
+  background-image: url(./img/bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .navbar {
   height: 90px;
@@ -34,6 +37,7 @@ body {
 .logo {
   display: flex;
   align-items: center;
+  font-family: poppins-semiBold;
 }
 .logo img {
   height: 47.5px;
@@ -238,6 +242,9 @@ body {
 .location {
   margin-top: 175px;
   background-color: #3366ff;
+  background-image: url(./img/bg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 50px;
   border-radius: 50px;
 }
@@ -274,7 +281,7 @@ body {
   width: 230px;
   border-radius: 15px;
   box-shadow: none;
-  background-color: #3366ff;
+  background-color: transparent;
   color: white;
   margin-top: 40px;
 }
@@ -291,6 +298,7 @@ body {
 .btn-location {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 .btn-location .btn {
   height: 40px;
@@ -299,4 +307,178 @@ body {
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 73px;
+}
+.category {
+  margin-top: 175px;
+  margin-bottom: 175px;
+}
+.category .tag {
+  display: flex;
+  justify-content: space-evenly;
+}
+.category .tag a {
+  text-decoration: none;
+  color: #c1c5d0;
+  font-size: 16px;
+}
+.category .tag a:hover {
+  color: #3366ff;
+  text-decoration: underline;
+}
+.category .category-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.category .category-card .btn-event {
+  margin: 0;
+}
+.space-card {
+  justify-content: center;
+  display: flex;
+}
+.space-card .card {
+  height: 350px;
+  width: 300px;
+  margin: 10px;
+  background-color: #3366ff;
+  overflow: hidden;
+}
+.space-card .card img {
+  height: 240px;
+  margin-bottom: 10px;
+}
+.space-card .card .text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-right: 70px;
+}
+.space-card .card .text p,
+.space-card .card .text h3 {
+  letter-spacing: 2px;
+}
+.space-card .card .text .small-icon {
+  position: absolute;
+  transform: translate(-20%, -120%);
+}
+.partner {
+  background-color: #373a42;
+  background-image: url(./img/bg3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.partner .top-title {
+  display: flex;
+}
+.partner .top-title .btn {
+  margin-top: 89px;
+  background-color: #ffffff40;
+  color: white;
+  width: 150px;
+}
+.partner .title h2 {
+  color: white;
+  margin-bottom: 15px;
+}
+.partner .p {
+  display: flex;
+  justify-content: center;
+  color: #c1c5d0;
+  font-size: 12px;
+}
+.partner-logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 56px;
+  gap: 62px;
+  margin-bottom: 170px;
+}
+.partner-logo img {
+  /* height: 80px; */
+  margin-bottom: 96px;
+}
+
+.footer {
+  color: #373a42;
+  height: 100px;
+  margin: 0 200px;
+  display: flex;
+  justify-content: center;
+}
+.footer div {
+  flex: 1;
+}
+.footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer li {
+  list-style: none;
+  word-spacing: 1px;
+  color: #c1c5d0;
+}
+.footer li:first-child {
+  color: #373a42;
+  font-family: poppins-bold;
+}
+.copyright {
+  color: #5a7184;
+  font-size: 16px;
+  font-family: poppins-bold;
+  position: absolute;
+  margin: 144px 0;
+}
+
+.content {
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  margin: 120px;
+  padding: 100px;
+}
+.content .left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content .left .img {
+  height: 486px;
+  width: 375px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.content .left span {
+  padding: 50px;
+  color: #373a42;
+  font-size: 20px;
+  font-family: poppins-semiBold;
+}
+
+.content .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title-event {
+  color: #373a42;
+  font-size: 24px;
+}
+.location-event {
+  color: #373a42;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  word-spacing: 1px;
+}
+.location-event div {
+  display: flex;
+  align-items: center;
 }
