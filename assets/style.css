@@ -753,3 +753,218 @@ h2 {
   letter-spacing: 1px;
   box-shadow: 0 8px 10px #2395ff4d;
 }
+
+.profile .content {
+  width: 100%;
+  padding: 50px;
+  margin: 0;
+  display: flex;
+}
+.title-profile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.title-profile h1 {
+  font-size: 20px;
+  color: #373a42;
+  letter-spacing: 1px;
+  margin: 0;
+}
+.content-profile {
+  display: flex;
+  width: 100%;
+  padding-top: 50px;
+}
+.content-profile .form {
+  width: 60%;
+}
+
+.content-profile .form table {
+  width: 90%;
+}
+.content-profile .form table td {
+  padding: 8px;
+}
+.content-profile .form p {
+  font-size: 14px;
+  color: #373a42;
+  letter-spacing: 1px;
+}
+.content-profile .form #name {
+  height: 55px;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1px solid #c1c5d0;
+  outline: none;
+  padding-left: 25px;
+  color: #777777;
+}
+.content-profile .form span {
+  font-size: 14px;
+  color: #777777;
+}
+.content-profile .form a {
+  font-size: 14px;
+  color: #3366ff;
+  margin: 0;
+  padding-left: 15px;
+}
+.content-profile .form select {
+  height: 55px;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1px solid #c1c5d0;
+  outline: none;
+  padding: 0 25px;
+  color: #777777;
+  letter-spacing: 1px;
+}
+.content-profile .form .btn {
+  width: 315px;
+  height: 61px;
+  font-size: 16px;
+  box-shadow: 0 8px 10px #2395ff4d;
+  margin-top: 50px;
+}
+.profile-pic {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-pic .border {
+  width: 100%;
+  border-left: 1px solid #c1c5d040;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.photo-profile {
+  height: 137px;
+  width: 137px;
+  border: 4px solid #3366ff;
+  border-radius: 50%;
+  padding: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.photo-profile .profile-img {
+  height: 100%;
+  border-radius: 50%;
+  filter: brightness(50%);
+  position: relative;
+}
+.photo-profile .kamera {
+  position: absolute;
+}
+.profile-pic .btn {
+  width: 255px;
+  height: 40px;
+  border: 1px solid #3366ff;
+  color: #3366ff;
+  font-family: poppins-semiBold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  background-color: transparent;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+.text {
+  width: 255px;
+  align-items: start;
+  color: #373a42bf;
+  font-size: 12px;
+}
+.profile {
+  display: flex;
+  padding: 50px 70px;
+}
+.profile .sidebar {
+  width: 30%;
+}
+.side-profile {
+  display: flex;
+  align-items: center;
+}
+.side-profile .pic {
+  height: 55px;
+  width: 55px;
+  border: 2px solid #3366ff;
+  border-radius: 50px;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  margin-right: 15px;
+}
+.side-profile .pic img {
+  height: 100%;
+  border-radius: 50%;
+}
+.side-profile h5,
+.side-profile p {
+  margin: 0;
+  color: #373a42;
+}
+.side-profile h5 {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.side-profile p {
+  font-size: 12px;
+  color: #373a42bf;
+  margin-top: 5px;
+  letter-spacing: 0.5px;
+}
+
+.sidebar-menu {
+  padding-top: 50px;
+}
+.sidebar-menu table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.sidebar-menu table tr td {
+  padding-top: 30px;
+}
+.sidebar-menu table td:nth-child(1) {
+  width: 10%;
+}
+.sidebar-menu table td:nth-child(2) {
+  color: #373a42;
+  font-size: 14px;
+  padding-left: 15px;
+  font-family: poppins-semiBold;
+  display: flex;
+  margin: 0;
+}
+.sidebar-menu table tr .red {
+  color: #f03800;
+}
+.sidebar-menu table tr .blue {
+  color: #3366ff;
+}
+.sidebar-menu .line {
+  background-image: url(./img/Line.png);
+  background-repeat: no-repeat;
+  background-position-y: 10px;
+  background-position-x: -10px;
+}
+.sidebar-menu .tabel tr:nth-child(1) td {
+  padding: 0;
+  margin: 0;
+}
+.sidebar-menu .tabel tr:nth-child(1) td:nth-child(2) {
+  padding-left: 15px;
+}
+.sidebar-menu .tabel tr:nth-child(1) td:nth-child(1) {
+  padding-top: 3px;
+}
