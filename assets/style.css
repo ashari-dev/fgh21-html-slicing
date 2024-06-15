@@ -15,6 +15,101 @@ body {
   margin: 0;
   background-color: #f4f7ff;
 }
+.form-login {
+  display: flex;
+  margin-bottom: 100px;
+}
+.form-login .left {
+  width: 55%;
+  display: flex;
+  background-color: #3366ff;
+  justify-content: center;
+  align-items: center;
+}
+.form-login .left img {
+  width: 70%;
+}
+.form-login .right {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 0;
+}
+.form-login .right .logo {
+  display: flex;
+  justify-content: center;
+}
+.form-login .right .title-login {
+  padding: 50px 0;
+  color: #373a42;
+}
+.form-login .right .title-login h1 {
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-family: poppins-semiBold;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.form-login .right .title-login p {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+.form-login .right .input {
+  height: 55px;
+  width: 315px;
+  border: 1px solid #c1c5d0;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.form-login .right .input input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  color: #c1c5d0;
+  padding-left: 25px;
+  outline: none;
+}
+.form-login .right .form p {
+  color: #3366ff;
+  font-size: 14px;
+  font-family: poppins-semiBold;
+  text-align: end;
+  margin-top: 25px;
+}
+.form-login .right .btn {
+  height: 55px;
+  width: 100%;
+  font-size: 16px;
+  box-shadow: 0 8px 10px #2395ff4d;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+.sosmed-login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 14px;
+  color: #373a42;
+  padding-top: 50px;
+}
+.google-fb {
+  display: flex;
+  gap: 16px;
+}
+.google-fb .google {
+  width: 95px;
+  height: 52px;
+  border-radius: 6px;
+  border: 1px solid #3366ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .img-hero {
   display: flex;
   justify-content: end;
