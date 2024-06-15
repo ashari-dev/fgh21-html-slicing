@@ -125,8 +125,9 @@ body {
   height: 90px;
   background-color: #ffffff;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 50px;
 }
 
 .logo {
@@ -237,7 +238,7 @@ body {
 .card-space {
   display: flex;
   gap: 30px;
-  position: absolute;
+  overflow: auto;
   margin-left: 120px;
   margin-top: 50px;
 }
@@ -324,7 +325,8 @@ body {
   opacity: 60%;
 }
 .btn-event {
-  margin-top: 500px;
+  margin-top: 50px;
+  margin-bottom: 175px;
   display: flex;
   justify-content: center;
 }
