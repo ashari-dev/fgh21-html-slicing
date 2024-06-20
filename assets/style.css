@@ -130,59 +130,8 @@ body {
   padding: 0 50px;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  font-family: poppins-semiBold;
-}
-.logo img {
-  height: 47.5px;
-  width: 50px;
-}
-.logo p {
-  color: #3366ff;
-}
-.logo span {
-  color: #fc1055;
-}
 
-.menu {
-  display: flex;
-  gap: 40px;
-}
-.menu a {
-  text-decoration: none;
-  color: #373a42;
-  font-size: 14px;
-}
-.menu a:hover {
-  text-decoration: underline;
-}
 
-.btn {
-  border: 0;
-  border-radius: 15px;
-  height: 30px;
-  width: 100px;
-  color: #373a42;
-  font-family: poppins;
-}
-.btn.transpatant {
-  background-color: transparent;
-  height: 40px;
-  width: 169px;
-}
-.btn.white {
-  background-color: white;
-  height: 40px;
-  width: 169px;
-}
-.btn.primary {
-  background-color: #3366ff;
-  color: white;
-  height: 40px;
-  width: 169px;
-}
 .event {
   margin-top: 172px;
 }
@@ -200,6 +149,12 @@ body {
   justify-content: center;
   font-size: 36px;
   color: #333333;
+}
+.event,
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 .event .date {
   display: flex;
@@ -234,6 +189,7 @@ body {
   justify-content: end;
   color: white;
   box-shadow: 10px 10px 10px 0px #a2a2a5;
+  flex-shrink: 0;
 }
 .card-space {
   display: flex;
@@ -252,8 +208,9 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-.card .text {
+.card-space .card .text {
   margin: 15px;
+  color: white;
 }
 .card .text p {
   font-size: 14px;
@@ -464,19 +421,21 @@ body {
   background-image: url(./img/bg3.png);
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 .partner .top-title {
   display: flex;
 }
 .partner .top-title .btn {
-  margin-top: 89px;
   background-color: #ffffff40;
   color: white;
   width: 150px;
 }
 .partner .title h2 {
   color: white;
-  margin-bottom: 15px;
 }
 .partner .p {
   display: flex;
@@ -487,13 +446,10 @@ body {
 .partner-logo {
   display: flex;
   justify-content: center;
-  margin-top: 56px;
   gap: 62px;
-  margin-bottom: 170px;
 }
 .partner-logo img {
-  /* height: 80px; */
-  margin-bottom: 96px;
+  height: 80px;
 }
 
 .footer {
@@ -502,6 +458,7 @@ body {
   margin: 0 200px;
   display: flex;
   justify-content: center;
+  padding: 50px 0;
 }
 .footer div {
   flex: 1;
