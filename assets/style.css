@@ -129,8 +129,82 @@ body {
   align-items: center;
   padding: 0 50px;
 }
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: poppins-semiBold;
+}
+.logo img {
+  height: 47.5px;
+  width: 50px;
+}
+.logo p {
+  color: #3366ff;
+}
+.logo span {
+  color: #fc1055;
+}
 
+.navbar .menu {
+  display: flex;
+  gap: 40px;
+}
+.navbar .menu a {
+  text-decoration: none;
+  color: #373a42;
+  font-size: 14px;
+}
+.navbar .menu a:hover {
+  text-decoration: underline;
+}
+.navbar .btn-navbar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.navbar .btn-navbar button {
+  box-shadow: 0 8px 10px #3366ff26;
+}
+.btn {
+  border: 0;
+  border-radius: 15px;
+  height: 30px;
+  width: 100px;
+  color: #373a42;
+  font-family: poppins;
+}
+.btn.transpatant {
+  background-color: transparent;
+  height: 40px;
+  width: 169px;
+}
+.btn.white {
+  background-color: white;
+  height: 40px;
+  width: 169px;
+}
+.btn.primary {
+  background-color: #3366ff;
+  color: white;
+  height: 40px;
+  width: 169px;
+}
 
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: 100%;
+  }
+  .navbar .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .navbar .btn-navbar {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}
 
 .event {
   margin-top: 172px;
