@@ -53,6 +53,12 @@ p {
 }
 
 @media (max-width: 768px) {
+  body .container .left {
+    display: none;
+  }
+  body .container .right {
+    width: 100%;
+  }
   .navbar {
     flex-direction: column;
     height: 100%;
@@ -123,6 +129,58 @@ p {
   }
 }
 
+.container {
+  display: flex;
+  max-height: 100%;
+}
+.container .left {
+  background-color: #3366ff;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.container .left img {
+  height: 480px;
+}
+.container .right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 120px 0;
+}
+.btn-login-sosmed {
+  display: flex;
+  gap: 20px;
+}
+.btn-login-sosmed .btn {
+  background-color: transparent;
+  border: 1px solid #3366ff;
+}
+.container-login {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.container-login .text-login {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #373a42;
+}
+.container-login .text-login h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.container-login .signin-sosmed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
 .form-login {
   width: 315px;
   display: flex;
