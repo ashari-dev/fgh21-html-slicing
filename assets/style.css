@@ -1,11 +1,8 @@
-@font-face {
-  font-family: poppins;
-  src: url(./assets/font/Poppins-Regular.ttf);
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   margin: 0;
   padding: 0;
-  font-family: poppins;
+  font-family: "Poppins", sans-serif;
 }
 a {
   text-decoration: none;
@@ -912,4 +909,76 @@ p {
   font-size: 16px;
   letter-spacing: 1px;
   font-weight: 600;
+}
+.payment-left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 50px;
+}
+.payment-left .title h2 {
+  font-weight: 600;
+  color: #373a42;
+}
+.color1 {
+  background-color: #884dff33;
+}
+.color2 {
+  background-color: #fc105533;
+}
+.color3 {
+  background-color: #ff890033;
+}
+.color4 {
+  background-color: #3366ff33;
+}
+.payment-left .left-row-payment {
+  display: flex;
+  flex-direction: column;
+}
+.payment-left .left-row-payment > div:nth-child(3) {
+  display: flex;
+}
+.payment-left .payment-method {
+  display: flex;
+  margin-right: 150px;
+  justify-content: space-between;
+}
+
+.payment-left .payment-method > div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.payment-left .payment-method > div .payment-icon {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.payment-left .payment-method > div .payment-name h4 {
+  font-weight: 600;
+  color: #373a42;
+}
+.payment-left .payment-method > div span {
+  color: #979797;
+  font-weight: 600;
+}
+.payment-left .payment-sub {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-left: 30px;
+  padding-top: 15px;
+}
+.payment-left .payment-sub .btn {
+  height: 45px;
+  width: 45px;
+  border: 1px solid #3366ff;
+  border-style: dashed;
+  color: #3366ff;
+  box-shadow: 0 2px 15px #1a3c4414;
+  font-size: 30px;
 }
