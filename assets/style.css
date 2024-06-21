@@ -53,6 +53,43 @@ p {
 }
 
 @media (max-width: 768px) {
+  body .container-content .left,
+  body .container-content .right,
+  .container-content .payment-left,
+  .container-content .payment-right {
+    width: auto;
+  }
+  body .payment-right .payment-border{
+    border: none;
+    padding: unset;
+  }
+  body .container-content .left .img-event {
+    position: absolute;
+    overflow: unset;
+  }
+  body .container-content .left .add-wishlist h2 {
+    display: none;
+  }
+  body .container-content .left .add-wishlist{
+    width: 100%;
+    justify-content: end;
+  }
+  body .container-content .left .add-wishlist img,
+  body .container-content .right > .title h1,
+  body .container-content .right .location-time,
+  body .container-content .right .attendees h4,
+  body .small-icon div {
+    position: relative;
+    color: white;
+  }
+  body .container-content .right .event-detail,
+  body .container-content .left .add-wishlist {
+    margin-top: 25%;
+  }
+  body .container-content .right .location-time {
+    flex-direction: column;
+    gap: 15px;
+  }
   body .container-content {
     margin: 0;
     padding: 30px;
