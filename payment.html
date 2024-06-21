@@ -11,99 +11,23 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <style>
-      .payment-left .title h2,
-      .payment-left .title h2 {
-        font-weight: 600;
-        color: #373a42;
-      }
-      .payment-left .img {
-        height: 45px;
-        width: 45px;
-        border-radius: 10px;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-      }
-      .bg1 {
-        background-color: #884dff33;
-      }
-      .bg2 {
-        background-color: #fc105533;
-      }
-      .bg3 {
-        background-color: #ff890033;
-      }
-      .bg4 {
-        background-color: #3366ff33;
-      }
-      .payment-left table {
-        border-collapse: collapse;
-        width: 90%;
-      }
-      .payment-left table td {
-        padding-bottom: 30px;
-      }
-      .payment-left table .img-table {
-        height: 100%;
-        width: auto;
-      }
-      .payment-left table .btn {
-        height: 45px;
-        width: 45px;
-        border: 1px solid #3366ff;
-        border-style: dashed;
-        box-shadow: 0 2px 15px #1a3c4414;
-        color: #3366ff;
-        font-size: 30px;
-      }
-      .payment-right {
-        width: 50%;
-      }
-      .payment-right .payment-border {
-        padding-left: 60px;
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-        border-left: 1px solid #c1c5d040;
-      }
-      .payment-right table {
-        border-collapse: collapse;
-        width: 100%;
-      }
-      .payment-right table td {
-        padding-bottom: 15px;
-      }
-      .payment-right table td:nth-child(2) {
-        text-align: end;
-        color: #3366ff;
-      }
-      .payment-right .btn {
-        height: 55px;
-        width: 100%;
-        box-shadow: 0 8px 10px #2395ff4d;
-        font-size: 16px;
-        font-weight: 600;
-        letter-spacing: 1px;
-      }
-      .payment-right table td,
-      .payment-left table td{
-        font-size: 14px;
-        font-weight: 600;
-        letter-spacing: 0.5px;
-        color: #373a42;
-      }
-    </style>
   </head>
   <body>
     <!-- navbar start -->
     <div class="navbar">
       <div class="left">
-        <div class="logo">
-          <div class="img-logo">
-            <img src="./assets/img/logo.png" alt="logo" />
+        <div>
+          <div class="logo">
+            <div class="img-logo">
+              <img src="./assets/img/logo.png" alt="logo" />
+            </div>
+            <div class="text-logo">We<span>tick</span></div>
           </div>
-          <div class="text-logo">We<span>tick</span></div>
+          <div>
+            <button id="menuHidden">
+              <img src="./assets/img/Vector (1).png" alt="menu" />
+            </button>
+          </div>
         </div>
       </div>
       <div class="center">
@@ -284,5 +208,22 @@
       </div>
     </div>
     <!-- End footer -->
+    <script>
+      const menu = document.getElementById("menuHidden");
+      const centerNav = document.getElementById("center");
+      const rightNav = document.getElementById("right");
+      menu.onclick = () => {
+        if (centerNav.getAttribute("style")) {
+          centerNav.removeAttribute("style");
+        } else {
+          centerNav.setAttribute("style", "display: none");
+        }
+        if (rightNav.getAttribute("style")) {
+          rightNav.removeAttribute("style");
+        } else {
+          rightNav.setAttribute("style", "display: none");
+        }
+      };
+    </script>
   </body>
 </html>

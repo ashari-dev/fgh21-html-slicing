@@ -16,11 +16,18 @@
     <!-- navbar start -->
     <div class="navbar">
       <div class="left">
-        <div class="logo">
-          <div class="img-logo">
-            <img src="./assets/img/logo.png" alt="logo" />
+        <div>
+          <div class="logo">
+            <div class="img-logo">
+              <img src="./assets/img/logo.png" alt="logo" />
+            </div>
+            <div class="text-logo">We<span>tick</span></div>
           </div>
-          <div class="text-logo">We<span>tick</span></div>
+          <div>
+            <button id="menuHidden">
+              <img src="./assets/img/Vector (1).png" alt="menu" />
+            </button>
+          </div>
         </div>
       </div>
       <div class="center">
@@ -106,5 +113,22 @@
       </div>
     </div>
     <!-- End footer -->
+    <script>
+      const menu = document.getElementById("menuHidden");
+      const centerNav = document.getElementById("center");
+      const rightNav = document.getElementById("right");
+      menu.onclick = () => {
+        if (centerNav.getAttribute("style")) {
+          centerNav.removeAttribute("style");
+        } else {
+          centerNav.setAttribute("style", "display: none");
+        }
+        if (rightNav.getAttribute("style")) {
+          rightNav.removeAttribute("style");
+        } else {
+          rightNav.setAttribute("style", "display: none");
+        }
+      };
+    </script>
   </body>
 </html>

@@ -53,7 +53,7 @@ p {
 }
 
 @media (max-width: 768px) {
-  .navbar #menu-hidden {
+  body .navbar #menuHidden {
     display: unset;
     background-color: transparent;
     border: none;
@@ -277,7 +277,7 @@ p {
   height: 90px;
   background-color: white;
 }
-.navbar #menu-hidden {
+.navbar #menuHidden {
   display: none;
 }
 .navbar .menu a {
@@ -915,4 +915,85 @@ p {
   flex-direction: column;
   width: 50%;
   gap: 50px;
+}
+.payment-left .title h2,
+.payment-left .title h2 {
+  font-weight: 600;
+  color: #373a42;
+}
+.payment-left .img {
+  height: 45px;
+  width: 45px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.bg1 {
+  background-color: #884dff33;
+}
+.bg2 {
+  background-color: #fc105533;
+}
+.bg3 {
+  background-color: #ff890033;
+}
+.bg4 {
+  background-color: #3366ff33;
+}
+.payment-left table {
+  border-collapse: collapse;
+  width: 90%;
+}
+.payment-left table td {
+  padding-bottom: 30px;
+}
+.payment-left table .img-table {
+  height: 100%;
+  width: auto;
+}
+.payment-left table .btn {
+  height: 45px;
+  width: 45px;
+  border: 1px solid #3366ff;
+  border-style: dashed;
+  box-shadow: 0 2px 15px #1a3c4414;
+  color: #3366ff;
+  font-size: 30px;
+}
+.payment-right {
+  width: 50%;
+}
+.payment-right .payment-border {
+  padding-left: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  border-left: 1px solid #c1c5d040;
+}
+.payment-right table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.payment-right table td {
+  padding-bottom: 15px;
+}
+.payment-right table td:nth-child(2) {
+  text-align: end;
+  color: #3366ff;
+}
+.payment-right .btn {
+  height: 55px;
+  width: 100%;
+  box-shadow: 0 8px 10px #2395ff4d;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.payment-right table td,
+.payment-left table td {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #373a42;
 }
