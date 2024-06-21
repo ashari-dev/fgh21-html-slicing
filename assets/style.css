@@ -53,6 +53,24 @@ p {
 }
 
 @media (max-width: 768px) {
+  body .container-content {
+    margin: 0;
+    padding: 30px;
+    flex-direction: column;
+    background-color: transparent;
+  }
+  .container-content .left-booking {
+    width: auto;
+  }
+  .container-content .right-booking {
+    width: auto;
+  }
+  body .container-content .left-booking img {
+    width: 100%;
+    height: auto;
+    transform: rotate(45deg);
+  }
+
   body .navbar #menuHidden {
     display: unset;
     background-color: transparent;
