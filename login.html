@@ -32,22 +32,22 @@
             <div><h4>Hi, Welcome back to Urticket!</h4></div>
           </div>
           <div class="form-login">
-            <form action="">
+            <form action="" onsubmit="validationForm()">
               <div class="input">
-                <input type="text" placeholder="Username" />
+                <input type="text" id="username" placeholder="Username" />
               </div>
               <div class="input">
-                <input type="email" placeholder="Email" />
+                <input type="email" id="email" placeholder="Email" />
               </div>
               <div class="input">
-                <input type="password" placeholder="Password" />
+                <input type="password" id="password" placeholder="Password" />
                 <img src="./assets/img/mata.png" alt="" />
               </div>
               <div class="forget">
-                <p>Forget Password?</p>
+                <a href="#">Forget Password?</a>
               </div>
               <div class="btn">
-                <button>Sign In</button>
+                <button type="submit">Sign In</button>
               </div>
             </form>
           </div>
@@ -67,5 +67,19 @@
         </div>
       </div>
     </div>
+
+    <script>
+      function validationForm() {
+        const username = document.getElementById("username").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+
+        if (username === "" || email === "" || password === "") {
+          alert("data tidak boleh kosong!!");
+        } else {
+          alert(`form brhasil disubmit dengan username : ${username}`);
+        }
+      }
+    </script>
   </body>
 </html>
