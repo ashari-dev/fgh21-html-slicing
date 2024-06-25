@@ -101,8 +101,12 @@
               <img src="./assets/img/card1.png" />
             </div>
             <div class="content-card">
-              <div class="date-event"><h4>Wed, 15 Nov, 4:00 PM</h4></div>
-              <div class="name-event"><h2>Sights & Sounds Exhibition</h2></div>
+              <div class="date-event">
+                <h4 id="date1"></h4>
+              </div>
+              <div class="name-event">
+                <h2 id="nameEvent1"></h2>
+              </div>
               <div class="small-icon">
                 <div><img src="./assets/img/group1.png" /></div>
                 <div><img src="./assets/img/group2.png" /></div>
@@ -171,23 +175,6 @@
             <div class="content-card">
               <div class="date-event"><h4>Wed, 15 Nov, 4:00 PM</h4></div>
               <div class="name-event"><h2>Sights & Sounds Exhibition</h2></div>
-              <div class="small-icon">
-                <div><img src="./assets/img/group1.png" /></div>
-                <div><img src="./assets/img/group2.png" /></div>
-                <div><img src="./assets/img/group3.png" /></div>
-                <div><img src="./assets/img/group4.png" /><span>62+</span></div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="./event.html">
-          <div class="card">
-            <div class="img-bg">
-              <img src="./assets/img/card2.png" />
-            </div>
-            <div class="content-card">
-              <div class="date-event"><h4>Thu, 16 Nov, 7:00 PM</h4></div>
-              <div class="name-event"><h2>See it in Gold Class</h2></div>
               <div class="small-icon">
                 <div><img src="./assets/img/group1.png" /></div>
                 <div><img src="./assets/img/group2.png" /></div>
@@ -488,6 +475,11 @@
           rightNav.setAttribute("style", "display: none");
         }
       };
+
+      const date1 = document.getElementById("date1");
+      const nameEvent1 = document.getElementById("nameEvent1");
+      date1.textContent = "Wed, 15 Nov, 4:00 PM";
+      nameEvent1.textContent = "Sights & Sounds Exhibition";
     </script>
   </body>
 </html>
