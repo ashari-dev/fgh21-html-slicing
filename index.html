@@ -418,33 +418,13 @@
           </div>
         </div>
         <div>
-          <ul>
-            <li>Wetick</li>
-            <li>About us</li>
-            <li>Features</li>
-            <li>Blog</li>
-            <li>Payments</li>
-            <li>Mobile App</li>
-          </ul>
+          <ul id="footer1"></ul>
         </div>
         <div>
-          <ul>
-            <li>Features</li>
-            <li>Booking</li>
-            <li>Create Event</li>
-            <li>Discover</li>
-            <li>Register</li>
-          </ul>
+          <ul id="footer2"></ul>
         </div>
         <div>
-          <ul>
-            <li>Campany</li>
-            <li>Partnership</li>
-            <li>Help</li>
-            <li>Term of service</li>
-            <li>Privacy policy</li>
-            <li>Sitemap</li>
-          </ul>
+          <ul id="footer3"></ul>
         </div>
       </div>
       <div class="copyright">
@@ -454,6 +434,45 @@
     <!-- End footer -->
 
     <script>
+      const footer1 = document.getElementById("footer1");
+      const footer2 = document.getElementById("footer2");
+      const footer3 = document.getElementById("footer3");
+
+      const contetFooter1 = [
+        "Wetick",
+        "About us",
+        "Features",
+        "Blog",
+        "Payments",
+        "Mobile App",
+      ];
+      const contetFooter2 = [
+        "Features",
+        "Booking",
+        "Create Event",
+        "Discover",
+        "Register",
+      ];
+      const contetFooter3 = [
+        "Campany",
+        "Partnership",
+        "Help",
+        "Term of service",
+        "Privacy policy",
+        "Sitemap",
+      ];
+
+      function footer(arr, target) {
+        for (let i = 0; i < arr.length; i++) {
+          const el = document.createElement("li");
+          el.textContent = arr[i];
+          target.appendChild(el);
+        }
+      }
+      footer(contetFooter1, footer1);
+      footer(contetFooter2, footer2);
+      footer(contetFooter3, footer3);
+
       const menu = document.getElementById("menuHidden");
       const centerNav = document.getElementById("center");
       const rightNav = document.getElementById("right");
