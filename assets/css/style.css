@@ -514,6 +514,7 @@ p {
   width: 435px;
   height: 435px;
   position: relative;
+  filter: brightness(50%);
 }
 .wrapper-event .card .content-card {
   position: absolute;
