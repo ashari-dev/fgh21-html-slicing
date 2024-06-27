@@ -115,7 +115,7 @@
           </div>
         </div>
         <div class="btn-event-detail">
-          <button class="btn primary">Buy Tickets</button>
+          <button class="btn primary" id="to-payment">Buy Tickets</button>
         </div>
       </div>
     </div>
@@ -123,55 +123,48 @@
 
     <!-- Start footer -->
     <div class="footer">
-      <div class="content-footer">
-        <div class="logo-sosmed">
-          <div class="logo">
-            <div class="img-logo">
-              <img src="./assets/img/logo.png" alt="logo" />
+      <footer>
+        <div class="content-footer">
+          <div class="logo-sosmed">
+            <div class="logo">
+              <div class="img-logo">
+                <img src="./assets/img/logo.png" alt="logo" />
+              </div>
+              <div class="text-logo">We<span>tick</span></div>
             </div>
-            <div class="text-logo">We<span>tick</span></div>
+            <div class="text-sosmed">
+              <h4>Find events you love with our</h4>
+            </div>
+            <div class="sosmed">
+              <img
+                src="./assets/img/bx_bxl-facebook-square.png"
+                alt="facebook"
+              />
+              <img
+                src="./assets/img/bx_bxl-instagram-alt.png"
+                alt="instagram"
+              />
+              <img
+                src="./assets/img/bx_bxl-whatsapp-square.png"
+                alt="whatsapp"
+              />
+              <img src="./assets/img/bx_bxl-twitter.png" alt="twitter" />
+            </div>
           </div>
-          <div class="text-sosmed"><h4>Find events you love with our</h4></div>
-          <div class="sosmed">
-            <img src="./assets/img/bx_bxl-facebook-square.png" alt="facebook" />
-            <img src="./assets/img/bx_bxl-instagram-alt.png" alt="instagram" />
-            <img src="./assets/img/bx_bxl-whatsapp-square.png" alt="whatsapp" />
-            <img src="./assets/img/bx_bxl-twitter.png" alt="twitter" />
+          <div>
+            <ul id="footer1"></ul>
+          </div>
+          <div>
+            <ul id="footer2"></ul>
+          </div>
+          <div>
+            <ul id="footer3"></ul>
           </div>
         </div>
-        <div>
-          <ul>
-            <li>Wetick</li>
-            <li>About us</li>
-            <li>Features</li>
-            <li>Blog</li>
-            <li>Payments</li>
-            <li>Mobile App</li>
-          </ul>
+        <div class="copyright">
+          <span>&copy; 2020 Wetick All Rights Reserved</span>
         </div>
-        <div>
-          <ul>
-            <li>Features</li>
-            <li>Booking</li>
-            <li>Create Event</li>
-            <li>Discover</li>
-            <li>Register</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li>Campany</li>
-            <li>Partnership</li>
-            <li>Help</li>
-            <li>Term of service</li>
-            <li>Privacy policy</li>
-            <li>Sitemap</li>
-          </ul>
-        </div>
-      </div>
-      <div class="copyright">
-        <span>&copy; 2020 Wetick All Rights Reserved</span>
-      </div>
+      </footer>
     </div>
     <!-- End footer -->
 
@@ -191,6 +184,52 @@
           rightNav.setAttribute("style", "display: none");
         }
       };
+
+      // to payment
+      const toPayment = document.getElementById("to-payment");
+      toPayment.onclick = () => {
+        window.location.href = "./payment.html";
+      };
+
+      // footer
+      const footer1 = document.getElementById("footer1");
+      const footer2 = document.getElementById("footer2");
+      const footer3 = document.getElementById("footer3");
+
+      const contetFooter1 = [
+        "Wetick",
+        "About us",
+        "Features",
+        "Blog",
+        "Payments",
+        "Mobile App",
+      ];
+      const contetFooter2 = [
+        "Features",
+        "Booking",
+        "Create Event",
+        "Discover",
+        "Register",
+      ];
+      const contetFooter3 = [
+        "Campany",
+        "Partnership",
+        "Help",
+        "Term of service",
+        "Privacy policy",
+        "Sitemap",
+      ];
+
+      function footer(arr, target) {
+        for (let i = 0; i < arr.length; i++) {
+          const el = document.createElement("li");
+          el.textContent = arr[i];
+          target.appendChild(el);
+        }
+      }
+      footer(contetFooter1, footer1);
+      footer(contetFooter2, footer2);
+      footer(contetFooter3, footer3);
     </script>
   </body>
 </html>

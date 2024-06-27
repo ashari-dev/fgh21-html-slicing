@@ -320,35 +320,48 @@
 
     <!-- Start footer -->
     <div class="footer">
-      <div class="content-footer">
-        <div class="logo-sosmed">
-          <div class="logo">
-            <div class="img-logo">
-              <img src="./assets/img/logo.png" alt="logo" />
+      <footer>
+        <div class="content-footer">
+          <div class="logo-sosmed">
+            <div class="logo">
+              <div class="img-logo">
+                <img src="./assets/img/logo.png" alt="logo" />
+              </div>
+              <div class="text-logo">We<span>tick</span></div>
             </div>
-            <div class="text-logo">We<span>tick</span></div>
+            <div class="text-sosmed">
+              <h4>Find events you love with our</h4>
+            </div>
+            <div class="sosmed">
+              <img
+                src="./assets/img/bx_bxl-facebook-square.png"
+                alt="facebook"
+              />
+              <img
+                src="./assets/img/bx_bxl-instagram-alt.png"
+                alt="instagram"
+              />
+              <img
+                src="./assets/img/bx_bxl-whatsapp-square.png"
+                alt="whatsapp"
+              />
+              <img src="./assets/img/bx_bxl-twitter.png" alt="twitter" />
+            </div>
           </div>
-          <div class="text-sosmed"><h4>Find events you love with our</h4></div>
-          <div class="sosmed">
-            <img src="./assets/img/bx_bxl-facebook-square.png" alt="facebook" />
-            <img src="./assets/img/bx_bxl-instagram-alt.png" alt="instagram" />
-            <img src="./assets/img/bx_bxl-whatsapp-square.png" alt="whatsapp" />
-            <img src="./assets/img/bx_bxl-twitter.png" alt="twitter" />
+          <div>
+            <ul id="footer1"></ul>
+          </div>
+          <div>
+            <ul id="footer2"></ul>
+          </div>
+          <div>
+            <ul id="footer3"></ul>
           </div>
         </div>
-        <div>
-          <ul id="footer1"></ul>
+        <div class="copyright">
+          <span>&copy; 2020 Wetick All Rights Reserved</span>
         </div>
-        <div>
-          <ul id="footer2"></ul>
-        </div>
-        <div>
-          <ul id="footer3"></ul>
-        </div>
-      </div>
-      <div class="copyright">
-        <span>&copy; 2020 Wetick All Rights Reserved</span>
-      </div>
+      </footer>
     </div>
     <!-- End footer -->
 
@@ -358,62 +371,8 @@
       toLogin.onclick = () => {
         window.location = "./login.html";
       };
-      // footer
-      const footer1 = document.getElementById("footer1");
-      const footer2 = document.getElementById("footer2");
-      const footer3 = document.getElementById("footer3");
 
-      const contetFooter1 = [
-        "Wetick",
-        "About us",
-        "Features",
-        "Blog",
-        "Payments",
-        "Mobile App",
-      ];
-      const contetFooter2 = [
-        "Features",
-        "Booking",
-        "Create Event",
-        "Discover",
-        "Register",
-      ];
-      const contetFooter3 = [
-        "Campany",
-        "Partnership",
-        "Help",
-        "Term of service",
-        "Privacy policy",
-        "Sitemap",
-      ];
-
-      function footer(arr, target) {
-        for (let i = 0; i < arr.length; i++) {
-          const el = document.createElement("li");
-          el.textContent = arr[i];
-          target.appendChild(el);
-        }
-      }
-      footer(contetFooter1, footer1);
-      footer(contetFooter2, footer2);
-      footer(contetFooter3, footer3);
-
-      const menu = document.getElementById("menuHidden");
-      const centerNav = document.getElementById("center");
-      const rightNav = document.getElementById("right");
-      menu.onclick = () => {
-        if (centerNav.getAttribute("style")) {
-          centerNav.removeAttribute("style");
-        } else {
-          centerNav.setAttribute("style", "display: none");
-        }
-        if (rightNav.getAttribute("style")) {
-          rightNav.removeAttribute("style");
-        } else {
-          rightNav.setAttribute("style", "display: none");
-        }
-      };
-
+      // list event
       const listEvent = document.getElementById("list-events");
 
       const arrEvent = [
@@ -495,6 +454,63 @@
 
         listEvent.appendChild(linkEvent);
       });
+
+      // menu navbar
+      const menu = document.getElementById("menuHidden");
+      const centerNav = document.getElementById("center");
+      const rightNav = document.getElementById("right");
+      menu.onclick = () => {
+        if (centerNav.getAttribute("style")) {
+          centerNav.removeAttribute("style");
+        } else {
+          centerNav.setAttribute("style", "display: none");
+        }
+        if (rightNav.getAttribute("style")) {
+          rightNav.removeAttribute("style");
+        } else {
+          rightNav.setAttribute("style", "display: none");
+        }
+      };
+
+      // footer
+      const footer1 = document.getElementById("footer1");
+      const footer2 = document.getElementById("footer2");
+      const footer3 = document.getElementById("footer3");
+
+      const contetFooter1 = [
+        "Wetick",
+        "About us",
+        "Features",
+        "Blog",
+        "Payments",
+        "Mobile App",
+      ];
+      const contetFooter2 = [
+        "Features",
+        "Booking",
+        "Create Event",
+        "Discover",
+        "Register",
+      ];
+      const contetFooter3 = [
+        "Campany",
+        "Partnership",
+        "Help",
+        "Term of service",
+        "Privacy policy",
+        "Sitemap",
+      ];
+
+      function footer(arr, target) {
+        for (let i = 0; i < arr.length; i++) {
+          const el = document.createElement("li");
+          el.textContent = arr[i];
+          target.appendChild(el);
+        }
+      }
+      footer(contetFooter1, footer1);
+      footer(contetFooter2, footer2);
+      footer(contetFooter3, footer3);
     </script>
   </body>
 </html>

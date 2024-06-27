@@ -236,13 +236,13 @@ p {
   .partner {
     padding: 100px 70px;
   }
-  .footer .content-footer {
+  footer .content-footer {
     flex-direction: column;
   }
-  body .footer {
+  body footer {
     padding: 100px 30px;
   }
-  .footer .content-footer {
+  footer .content-footer {
     gap: 50px;
   }
 }
@@ -752,37 +752,37 @@ p {
   gap: 60px;
 }
 
-.footer {
+footer {
   display: flex;
   flex-direction: column;
   gap: 75px;
   padding: 170px 200px;
 }
-.footer .content-footer {
+footer .content-footer {
   display: flex;
   justify-content: space-between;
 }
 
-.footer .content-footer .logo-sosmed {
+footer .content-footer .logo-sosmed {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.footer .content-footer .text-sosmed {
+footer .content-footer .text-sosmed {
   color: #373a42;
 }
-.footer .content-footer .sosmed {
+footer .content-footer .sosmed {
   display: flex;
   gap: 18px;
 }
-.footer .content-footer li {
+footer .content-footer li {
   color: #c1c5d0;
   margin-bottom: 15px;
   font-size: 14px;
   font-weight: 500;
   list-style: none;
 }
-.footer .content-footer li:first-child {
+footer .content-footer li:first-child {
   font-size: 16px;
   font-weight: 600;
   color: #373a42;
