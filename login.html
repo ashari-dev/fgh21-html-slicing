@@ -32,15 +32,12 @@
             <div><h4>Hi, Welcome back to Urticket!</h4></div>
           </div>
           <div class="form-login">
-            <form action="" onsubmit="validationForm()">
+            <form id="auth-login">
               <div class="input">
-                <input type="text" id="username" placeholder="Username" />
+                <input type="email" name="email" placeholder="Email" />
               </div>
               <div class="input">
-                <input type="email" id="email" placeholder="Email" />
-              </div>
-              <div class="input">
-                <input type="password" id="password" placeholder="Password" />
+                <input type="password" name="password" placeholder="Password" />
                 <img src="./assets/img/mata.png" alt="" />
               </div>
               <div class="forget">
@@ -68,6 +65,18 @@
       </div>
     </div>
 
-    <script></script>
+    <script>
+      const login = document.getElementById("auth-login");
+      login.onsubmit = (e) => {
+        e.preventDefault();
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+        if (email === "admin@admin.com" && password === "admin123") {
+          window.location="/index.html";
+        } else {
+          alert("email dan passwod salah");
+        }
+      };
+    </script>
   </body>
 </html>
