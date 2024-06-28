@@ -1115,6 +1115,7 @@ footer .content-footer li:first-child {
   flex-direction: column;
   gap: 50px;
   width: 70%;
+  min-height: 650px;
 }
 .edit-profile .title {
   font-weight: 600;
@@ -1295,8 +1296,8 @@ footer .content-footer li:first-child {
 .sidebar .side-menu .sub-menu {
   padding-left: 40px;
 }
-.sidebar .side-menu .sub-menu:nth-child(3),
-.sidebar .side-menu .sub-menu:nth-child(3) i {
+.sidebar .side-menu .sub-menu.active,
+.sidebar .side-menu .sub-menu.active i {
   color: #3366ff;
 }
 .sidebar .side-menu .logout,
@@ -1311,4 +1312,23 @@ footer .content-footer li:first-child {
   line-height: 0.1em;
   position: absolute;
   margin-left: -10px;
+}
+
+.edit-profile .edit-profie-content .form-change {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+}
+.edit-profile .edit-profie-content .form-change .btn {
+  width: 88%;
+  height: 60px;
+  border: none;
+  border-radius: 15px;
+  background-color: #3366ff;
+  color: white;
+  box-shadow: 0 8px 10px #2395ff4d;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
