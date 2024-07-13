@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="title-name">Sign in</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css" />
+  </head>
+  <body>
+    <div class="container-sign">
+      <div class="left">
+        <img src="./assets/img/hero.png" alt="img">
+      </div>
+      <div class="right">
+        <div>
+          <div class="logo">
+            <img src="./assets/img/logo.png" alt="logo" />
+            <div>we<span>tick</span></div>
+          </div>
+          <div class="text-title">
+            <h1>Sign in</h1>
+            <p>Hi, Welcome back to Urticket!</p>
+          </div>
+
+          <form action="" class="form-login">
+            <div>
+              <input type="text" id="username" placeholder="username" />
+            </div>
+            <div>
+              <input type="email" id="email" placeholder="Email" />
+            </div>
+            <div>
+              <input type="password" id="password" placeholder="Password" />
+              <i class="far fa-eye"></i>
+            </div>
+            <a href="#">Forget Password?</a>
+            <div class="btn">
+              <button>Sign In</button>
+            </div>
+          </form>
+
+          <div class="login-social">
+            <p>or sign in with</p>
+            <div>
+              <button><i class="fab fa-google"></i></button>
+              <button><i class="fab fa-facebook-square"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <script type="module">
+      import { footer, loadFooter } from "./assets/js/script.js";
+    </script>
+  </body>
+</html>

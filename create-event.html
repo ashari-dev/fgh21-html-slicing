@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="title-name">My Booking</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css" />
+    <style></style>
+  </head>
+  <body>
+    <section class="modal hide" id="modal">
+      <div class="modal-event">
+        <div class="close">
+          <button id="btn-close">
+            <i  class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="title">Create Event</div>
+        <form id="form">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Input Name Event ..." />
+          </div>
+          <div>
+            <label for="category">Category</label>
+            <input type="text" id="category" placeholder="Select Category" />
+          </div>
+          <div>
+            <label for="location">location</label>
+            <input type="text" id="location" placeholder="Select Location" />
+          </div>
+          <div>
+            <label for="date">Date</label>
+            <input type="text" id="date" placeholder="01/01/2022" />
+          </div>
+          <div>
+            <label for="price">Price</label>
+            <input type="text" id="price" placeholder="Input Price ..." />
+          </div>
+          <div>
+            <label for="image">Image</label>
+            <input type="text" id="image" placeholder="Chose File ..." />
+          </div>
+          <div class="detail">
+            <label for="detail">Detail</label>
+            <textarea name="detail" id="detail"></textarea>
+          </div>
+          <div class="btn">
+            <button>Save</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <div id="navbar-user"></div>
+    <div class="content-init">
+      <div id="sidebar"></div>
+      <section>
+        <div class="booking">
+          <div class="title">
+            <div>Create Event</div>
+            <button id="btn-modal">
+              <div>Create</div>
+            </button>
+          </div>
+          <div class="content">
+            <div>No tickets bought</div>
+            <div>
+              It appears you haven’t bought any tickets yet. Maybe try searching
+              these?
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="./assets/js/navbar-user.js"></script>
+    <script src="./assets/js/sidebar.js"></script>
+    <script src="./assets/js/footer.js"></script>
+    <script>
+      const modal = document.getElementById("modal");
+      const btnModal = document.getElementById("btn-modal");
+      const btnClose = document.getElementById("btn-close");
+      btnModal.addEventListener("click", () => {
+        modal.classList.toggle("hide");
+      });
+      btnClose.addEventListener("click", () => {
+        modal.classList.toggle("hide");
+        // console.log("login");
+      });
+    </script>
+  </body>
+</html>

@@ -3,151 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Event</title>
+    <title id="title-name">Event</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css" />
   </head>
   <body>
-    <!-- navbar start -->
-    <div class="navbar">
-      <div class="left">
-        <div>
-          <div class="logo">
-            <div class="img-logo">
-              <img src="./assets/img/logo.png" alt="logo" />
-            </div>
-            <div class="text-logo">We<span>tick</span></div>
-          </div>
-          <div>
-            <button id="menuHidden">
-              <img src="./assets/img/Vector (1).png" alt="menu" />
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="center" id="center">
-        <div class="menu">
-          <div>
-            <a href="./index.html">Home</a>
-          </div>
-          <div>
-            <a href="./payment.html">Create Event</a>
-          </div>
-          <div>
-            <a href="./booking.html">Location</a>
-          </div>
-        </div>
-      </div>
-      <div class="right" id="right">
-        <div class="nav-profile">
-          <div class="img-nav-profile">
-            <img src="./assets/img/jhon.png" alt="Jhon" />
-          </div>
-          <div class="name-nav-profile">
-            <a href="./profile.html"><h4>Jhon Tomson</h4></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- navbar End -->
-
-    <!-- start Content -->
-    <div class="container-content">
+    <div id="navbar-user"></div>
+    <section class="container-content">
       <div class="left">
         <div class="img-event">
-          <img src="./assets/img/card1.png" alt="Event" />
+          <img
+            src="https://i.pinimg.com/564x/a9/00/8d/a9008d702f734a3ca67eeb2bc25a1b6c.jpg"
+            alt="Event"
+          />
         </div>
-        <div class="add-wishlist">
-          <img src="./assets/img/heart.png" alt="heart" />
-          <h2>Add to Wishlist</h2>
+        <div class="heart">
+          <i class="far fa-heart"></i> <span>Add to Wishlist</span>
         </div>
       </div>
       <div class="right">
-        <div class="title">
-          <h1>Sights & Sounds Exhibition</h1>
+        <div class="title">Sights & Sounds Exhibition</div>
+        <div class="location-date">
+          <div><i class="fas fa-map-marker-alt"></i>Jakarta, Indonesia</div>
+          <div><i class="far fa-clock"></i>Wed, 15 Nov, 4:00 PM</div>
         </div>
-        <div class="location-time">
-          <div class="location">
-            <div class="img">
-              <img src="./assets/img/location.png" alt="location" />
+        <div class="attendees-event">
+          <p>Attendees</p>
+          <div class="attendees">
+            <div class="attendees-icon">
+              <img src="./assets/img/group1.png" alt="icon" />
             </div>
-            <div class="text"><h4>Jakarta, Indonesia</h4></div>
-          </div>
-          <div class="time">
-            <div class="img">
-              <img src="./assets/img/time.png" alt="time" />
+            <div class="attendees-icon">
+              <img src="./assets/img/group2.png" alt="icon" />
             </div>
-            <div class="text"><h4>Wed, 15 Nov, 4:00 PM</h4></div>
+            <div class="attendees-icon">
+              <img src="./assets/img/group3.png" alt="icon" />
+            </div>
+            <div class="attendees-icon">
+              <img src="./assets/img/group4.png" alt="icon" />
+              <div>+62</div>
+            </div>
           </div>
         </div>
-        <div class="attendees">
-          <h4>Attendees</h4>
-          <div class="small-icon">
-            <div><img src="./assets/img/group1.png" /></div>
-            <div><img src="./assets/img/group2.png" /></div>
-            <div><img src="./assets/img/group3.png" /></div>
-            <div><img src="./assets/img/group4.png" /><span>62+</span></div>
+        <hr />
+        <div class="text-event">
+          <div class="title">Event Detail</div>
+          <div class="desc">
+            After his controversial art exhibition "Tear and Consume" back in
+            November 2018, in which guests were invited to tear up…
+            <a href="">Read More</a>
           </div>
         </div>
-        <div class="event-detail">
-          <div class="title">
-            <h2>Event Detail</h2>
-          </div>
-          <div class="text-event">
-            <p>
-              After his controversial art exhibition "Tear and Consume" back in
-              November 2018, in which guests were invited to tear up…
-            </p>
-            <a href="#">Read more</a>
-          </div>
+        <div class="location">
+          <div class="title">Location</div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.9527462908673!2d106.94075607587008!3d-6.400090662597701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6995002b03b4ef%3A0x52262b02144dc0!2sFazztrack!5e0!3m2!1sid!2sid!4v1720349212109!5m2!1sid!2sid"
+            frameborder="0"
+          ></iframe>
         </div>
-        <div class="location-event-detail">
-          <div class="title">
-            <h2>Location</h2>
-          </div>
-          <div class="img-location">
-            <img src="./assets/img/map.png" alt="location" />
-          </div>
-        </div>
-        <div class="btn-event-detail">
-          <button class="btn primary" id="to-payment">Buy Tickets</button>
-        </div>
+        <button class="btn-event" id="btn-event">Buy Tickets</button>
       </div>
-    </div>
-    <!-- End Content -->
-
-    <!-- Start footer -->
+    </section>
     <div id="footer"></div>
-    <!-- End footer -->
-
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/navbar-user.js"></script>
+    <script src="./assets/js/footer.js"></script>
     <script>
-      const menu = document.getElementById("menuHidden");
-      const centerNav = document.getElementById("center");
-      const rightNav = document.getElementById("right");
-      menu.onclick = () => {
-        if (centerNav.getAttribute("style")) {
-          centerNav.removeAttribute("style");
-        } else {
-          centerNav.setAttribute("style", "display: none");
-        }
-        if (rightNav.getAttribute("style")) {
-          rightNav.removeAttribute("style");
-        } else {
-          rightNav.setAttribute("style", "display: none");
-        }
-      };
-
-      // to payment
-      const toPayment = document.getElementById("to-payment");
-      toPayment.onclick = () => {
-        window.location.href = "./payment.html";
-      };
+      const btn = document.getElementById("btn-event");
+      btn.addEventListener('click',()=>{
+        window.location = "/my-booking-home.html"
+      })
     </script>
   </body>
 </html>

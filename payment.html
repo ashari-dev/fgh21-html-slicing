@@ -3,179 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Payment</title>
+    <title id="title-name">Booking</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css" />
   </head>
   <body>
-    <!-- navbar start -->
-    <div class="navbar">
-      <div class="left">
-        <div>
-          <div class="logo">
-            <div class="img-logo">
-              <img src="./assets/img/logo.png" alt="logo" />
+    <div id="navbar-user"></div>
+    <section class="container-content">
+      <div class="left-payment">
+        <div class="title">Payment Method</div>
+        <div class="payment-method">
+          <div class="col">
+            <input type="radio" name="payment" checked />
+            <div class="logo-payment">
+              <div class="card">
+                <i class="fas fa-credit-card"></i>
+              </div>
             </div>
-            <div class="text-logo">We<span>tick</span></div>
+            <div class="name">
+              Card
+              <i class="fas fa-chevron-up"></i>
+            </div>
           </div>
-          <div>
-            <button id="menuHidden">
-              <img src="./assets/img/Vector (1).png" alt="menu" />
-            </button>
+          <div class="atm">
+            <img
+              src="./assets/img/atm-card.png"
+              alt="Card ATM"
+              class="atm-card"
+            />
+            <button>+</button>
           </div>
-        </div>
-      </div>
-      <div class="center" id="center">
-        <div class="menu">
-          <div>
-            <a href="./index.html">Home</a>
+          <div class="col">
+            <input type="radio" name="payment" />
+            <div class="logo-payment">
+              <div class="bank">
+                <i class="fas fa-university"></i>
+              </div>
+            </div>
+            <div class="name">
+              Bank
+              <i class="fas fa-chevron-down"></i>
+            </div>
           </div>
-          <div>
-            <a href="./payment.html">Create Event</a>
+          <div class="col">
+            <input type="radio" name="payment" />
+            <div class="logo-payment">
+              <div class="retail">
+                <i class="fas fa-store"></i>
+              </div>
+            </div>
+            <div class="name">
+              Retail
+              <i class="fas fa-chevron-down"></i>
+            </div>
           </div>
-          <div>
-            <a href="./booking.html">Location</a>
-          </div>
-        </div>
-      </div>
-      <div class="right" id="right">
-        <div class="nav-profile">
-          <div class="img-nav-profile">
-            <img src="./assets/img/jhon.png" alt="Jhon" />
-          </div>
-          <div class="name-nav-profile">
-            <a href="./profile.html"><h4>Jhon Tomson</h4></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- navbar End -->
-
-    <!-- start Content -->
-    <div class="container-content">
-      <div class="payment-left">
-        <div class="title">
-          <h2>Payment Method</h2>
-        </div>
-        <div class="table-left">
-          <table>
-            <tr>
-              <td width="25px"><input type="radio" checked /></td>
-              <td width="60px">
-                <div class="img bg1">
-                  <img src="./assets/img/payment-icon1.png" alt="icon" />
-                </div>
-              </td>
-              <td>Card</td>
-              <td width="30px">△</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td colspan="3">
-                <img
-                  class="img-table"
-                  src="./assets/img/atm-card.png"
-                  alt="Card"
-                />
-              </td>
-              <td width="100px"><button class="btn transparent">+</button></td>
-            </tr>
-            <tr>
-              <td width="25px"><input type="radio" /></td>
-              <td width="60px">
-                <div class="img bg2">
-                  <img src="./assets/img/paymnet-icon2.png" alt="icon" />
-                </div>
-              </td>
-              <td>Bank Transfer</td>
-              <td width="15px">▽</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td width="25px"><input type="radio" /></td>
-              <td width="60px">
-                <div class="img bg3">
-                  <img src="./assets/img/paymnet-icon3.png" alt="icon" />
-                </div>
-              </td>
-              <td>Retail</td>
-              <td width="15px">▽</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td width="25px"><input type="radio" /></td>
-              <td width="60px">
-                <div class="img bg4">
-                  <img src="./assets/img/paymnet-icon4.png" alt="icon" />
-                </div>
-              </td>
-              <td>E-Money</td>
-              <td width="15px">▽</td>
-              <td></td>
-            </tr>
-          </table>
-        </div>
-      </div>
-      <div class="payment-right">
-        <div class="payment-border">
-          <div class="title">
-            <h2>Ticket Detail</h2>
-          </div>
-          <div class="table-right">
-            <table>
-              <tr>
-                <td>Event</td>
-                <td>Sights & Sounds Exhibition</td>
-              </tr>
-              <tr>
-                <td>Ticket Section</td>
-                <td>VIP</td>
-              </tr>
-              <tr>
-                <td>Quantity</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <td>Total Payment</td>
-                <td>$70</td>
-              </tr>
-            </table>
-          </div>
-          <div class="btn-payment-content">
-            <button class="btn primary">Payment</button>
+          <div class="col">
+            <input type="radio" name="payment" />
+            <div class="logo-payment">
+              <div class="e-money">
+                <i class="fas fa-credit-card"></i>
+              </div>
+            </div>
+            <div class="name">
+              E-money
+              <i class="fas fa-chevron-down"></i>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- End Content -->
-
-    <!-- Start footer -->
+      <div class="right-payment">
+        <hr />
+        <div class="content">
+          <div class="title">Ticket Detail</div>
+          <div class="payment-total">
+            <div>Event <span>Sights & Sounds Exhibition</span></div>
+            <div>Ticket Section <span>VIP</span></div>
+            <div>Quantity <span>2</span></div>
+            <div>Total Payment <span>$70</span></div>
+          </div>
+          <button>Payment</button>
+        </div>
+      </div>
+    </section>
     <div id="footer"></div>
-    <!-- End footer -->
-
-    <script src="./assets/js/script.js"></script>
-    <script>
-      const menu = document.getElementById("menuHidden");
-      const centerNav = document.getElementById("center");
-      const rightNav = document.getElementById("right");
-      menu.onclick = () => {
-        if (centerNav.getAttribute("style")) {
-          centerNav.removeAttribute("style");
-        } else {
-          centerNav.setAttribute("style", "display: none");
-        }
-        if (rightNav.getAttribute("style")) {
-          rightNav.removeAttribute("style");
-        } else {
-          rightNav.setAttribute("style", "display: none");
-        }
-      };
-    </script>
+    <script src="./assets/js/navbar-user.js"></script>
+    <script src="./assets/js/footer.js"></script>
   </body>
 </html>

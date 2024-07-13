@@ -3,432 +3,300 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
+    <title id="title-name">Home</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css" />
   </head>
   <body>
-    <!-- navbar start -->
-    <div class="navbar">
-      <div class="left">
-        <div>
-          <div class="logo">
-            <div class="img-logo">
-              <img src="./assets/img/logo.png" alt="logo" />
-            </div>
-            <div class="text-logo">We<span>tick</span></div>
-          </div>
-          <div>
-            <button id="menuHidden">
-              <img src="./assets/img/Vector (1).png" alt="menu" />
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="center" id="center">
-        <div class="menu">
-          <div>
-            <a href="./index.html">Home</a>
-          </div>
-          <div>
-            <a href="index.html#event">Event</a>
-          </div>
-          <div>
-            <a href="#location">Location</a>
-          </div>
-        </div>
-      </div>
-      <div class="right" id="right">
-        <button class="btn transparent" id="to-login"><h4>Log In</h4></button>
-        <button class="btn primary"><h4>Sign Up</h4></button>
-      </div>
-    </div>
-    <!-- navbar End -->
+    <div id="navbar-home"></div>
 
-    <!-- hero start -->
-    <div class="hero">
-      <img src="./assets/img/carosel.png" />
+    <div class="header">
+      <img src="./assets/img/hero.png" alt="hero" />
     </div>
-    <!-- hero End -->
 
-    <!-- Event start -->
-    <div class="home-event" id="event">
+    <section class="home-event">
       <div class="small-title">
-        <div>
-          <hr />
-        </div>
-        <div>
-          <p>EVENT</p>
-        </div>
+        <hr />
+        <p>EVENT</p>
       </div>
-      <div>
-        <div class="title">
-          <h1>EVENT FOR YOU</h1>
-        </div>
+      <div class="title">Event For You</div>
+      <div class="date-event">
+        <div>13 <span>Mon</span></div>
+        <div>14 <span>Tue</span></div>
+        <div class="active">15 <span>Wed</span></div>
+        <div>16 <span>Thu</span></div>
+        <div>17 <span>Fri</span></div>
       </div>
-      <div class="date">
-        <div>
-          <h4>13</h4>
-          <h4>Mon</h4>
-        </div>
-        <div>
-          <h4>14</h4>
-          <h4>Tue</h4>
-        </div>
-        <div class="active">
-          <h4>15</h4>
-          <h4>Wed</h4>
-          <img src="./assets/img/Oval.png" alt="" />
-        </div>
-        <div>
-          <h4>16</h4>
-          <h4>Thu</h4>
-        </div>
-        <div>
-          <h4>17</h4>
-          <h4>Fri</h4>
-        </div>
-      </div>
-      <div class="wrapper-event" id="list-events">
-        <a href="./event.html">
-          <div class="card">
-            <div class="img-bg">
-              <img src="./assets/img/card1.png" />
-            </div>
-            <div class="content-card">
-              <div class="date-event">
-                <h4>Wed, 15 Nov, 4:00 PM</h4>
+      <div class="wrapper-event" id="wrapper-event">
+        <div class="card" id="card">
+          <img
+            src="https://i.pinimg.com/564x/a9/00/8d/a9008d702f734a3ca67eeb2bc25a1b6c.jpg"
+            alt="Event"
+          />
+          <div class="content">
+            <div class="date-content">Wed, 15 Nov, 4:00 PM</div>
+            <div class="title-event">Sights & Sounds Exhibition</div>
+            <div class="attendees">
+              <div class="attendees-icon">
+                <img src="./assets/img/group1.png" alt="icon" />
               </div>
-              <div class="name-event">
+              <div class="attendees-icon">
+                <img src="./assets/img/group2.png" alt="icon" />
+              </div>
+              <div class="attendees-icon">
+                <img src="./assets/img/group3.png" alt="icon" />
+              </div>
+              <div class="attendees-icon">
+                <img src="./assets/img/group4.png" alt="icon" />
+                <div>+62</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-event-home">
+        <button><i class="fas fa-arrow-left"></i></button>
+        <button><i class="fas fa-arrow-right"></i></button>
+      </div>
+    </section>
+
+    <section id="location" class="home-location">
+      <div class="small-title">
+        <hr />
+        <p>LOCATION</p>
+      </div>
+      <div class="content">
+        <div class="title">Discover Events Near You</div>
+        <div class="city">
+          <img src="./assets/img/aceh.png" alt="aceh" /><span>Aceh</span>
+        </div>
+        <div class="city">
+          <img src="./assets/img/jakarta.png" alt="jakarta.png" /><span
+            >Jakarta</span
+          >
+        </div>
+        <div class="city">
+          <img src="./assets/img/bandung.png" alt="bandung.png" /><span
+            >Bandung</span
+          >
+        </div>
+        <div class="city">
+          <img src="./assets/img/solo.png" alt="solo.png" /><span>Solo</span>
+        </div>
+        <div class="city">
+          <img src="./assets/img/jogja.png" alt="jogja.png" /><span
+            >Yogyakarta</span
+          >
+        </div>
+        <div class="city">
+          <img src="./assets/img/semarang.png" alt="semarang.png" /><span
+            >Semarang</span
+          >
+        </div>
+        <div class="city">
+          <img src="./assets/img/bali.png" alt="bali.png" /><span>Bali</span>
+        </div>
+      </div>
+      <button>See All</button>
+    </section>
+
+    <section class="home-category">
+      <div class="small-title">
+        <hr />
+        <p>CATEGORY</p>
+      </div>
+      <div class="title">Browse Events By Category</div>
+      <div class="category">
+        <a href="#">Music</a>
+        <a href="#">Arts</a>
+        <a href="#">Outdoor</a>
+        <a href="#">Workshop</a>
+        <a href="#">Sport</a>
+        <a href="#">Festival</a>
+        <a href="#">Fashion</a>
+      </div>
+      <div class="content">
+        <button class="left"><i class="fas fa-arrow-left"></i></button>
+        <div class="wrapper">
+          <div class="card">
+            <div class="img">
+              <img
+                src="https://i.pinimg.com/564x/38/56/67/385667987c75db6c26e22bb0f88583d3.jpg"
+                alt="Event"
+              />
+            </div>
+            <div class="content">
+              <div class="attendees">
+                <div class="attendees-icon">
+                  <img src="./assets/img/group1.png" alt="icon" />
+                </div>
+                <div class="attendees-icon">
+                  <img src="./assets/img/group2.png" alt="icon" />
+                </div>
+                <div class="attendees-icon">
+                  <img src="./assets/img/group3.png" alt="icon" />
+                </div>
+                <div class="attendees-icon">
+                  <img src="./assets/img/group4.png" alt="icon" />
+                  <div>+62</div>
+                </div>
+              </div>
+              <div class="text-card">
+                <p>Wed, 15 Nov, 4:00 PM</p>
                 <h2>Sights & Sounds Exhibition</h2>
               </div>
-              <div class="small-icon">
-                <div><img src="./assets/img/group1.png" /></div>
-                <div><img src="./assets/img/group2.png" /></div>
-                <div><img src="./assets/img/group3.png" /></div>
-                <div><img src="./assets/img/group4.png" /><span>62+</span></div>
-              </div>
             </div>
           </div>
-        </a>
-      </div>
-      <div class="btn-event">
-        <button class="btn transparent">←</button>
-        <button class="btn primary">→</button>
-      </div>
-    </div>
-    <!-- Event End -->
-
-    <!-- start location -->
-    <div class="home-location primary" id="location">
-      <div class="small-title">
-        <div>
-          <hr />
-        </div>
-        <div>
-          <p>Location</p>
-        </div>
-      </div>
-      <div class="location">
-        <div class="title-location"><h1>Discover Events Near You</h1></div>
-        <div class="city">
-          <div class="img-city">
-            <img src="./assets/img/jakarta.png" alt="jakarta" />
-          </div>
-          <div class="name-city">
-            <h3>Jakarta</h3>
-          </div>
-        </div>
-        <div class="city">
-          <div class="img-city">
-            <img src="./assets/img/bandung.png" alt="bandung" />
-          </div>
-          <div class="name-city">
-            <h3>Bandung</h3>
-          </div>
-        </div>
-        <div class="city">
-          <div class="img-city">
-            <img src="./assets/img/bali.png" alt="bali" />
-          </div>
-          <div class="name-city">
-            <h3>Bali</h3>
-          </div>
-        </div>
-        <div class="city">
-          <div class="img-city">
-            <img src="./assets/img/aceh.png" alt="aceh" />
-          </div>
-          <div class="name-city">
-            <h3>Aceh</h3>
-          </div>
-        </div>
-        <div class="city">
-          <div class="img-city">
-            <img src="./assets/img/solo.png" alt="solo" />
-          </div>
-          <div class="name-city">
-            <h3>Solo</h3>
-          </div>
-        </div>
-        <div class="city">
-          <div class="img-city">
-            <img src="./assets/img/jogja.png" alt="jogja" />
-          </div>
-          <div class="name-city">
-            <h3>Yogyakarta</h3>
-          </div>
-        </div>
-        <div class="city">
-          <div class="img-city">
-            <img src="./assets/img/semarang.png" alt="semarang" />
-          </div>
-          <div class="name-city">
-            <h3>Semarang</h3>
-          </div>
-        </div>
-      </div>
-      <div class="btn-location">
-        <button class="btn">See All</button>
-      </div>
-    </div>
-    <!-- end loction -->
-
-    <!-- start Cateory -->
-    <div class="home-category">
-      <div class="small-title">
-        <div>
-          <hr />
-        </div>
-        <div>
-          <p>Category</p>
-        </div>
-      </div>
-      <div>
-        <div class="title">
-          <h1>Browse Events By Category</h1>
-        </div>
-      </div>
-      <div class="category">
-        <h3>Music</h3>
-        <h3>Arts</h3>
-        <h3>Outdoor</h3>
-        <h3>Workshop</h3>
-        <h3>Sport</h3>
-        <h3>Festival</h3>
-        <h3>Fashion</h3>
-      </div>
-      <div class="category-event">
-        <div class="left-btn">
-          <button class="btn transparent">←</button>
-        </div>
-        <div class="list-event-category">
           <div class="card">
             <div class="img">
-              <img src="./assets/img/card1.png" alt="Event" />
+              <img
+                src="https://i.pinimg.com/564x/38/56/67/385667987c75db6c26e22bb0f88583d3.jpg"
+                alt="Event"
+              />
             </div>
-            <div class="card-content-category">
-              <div class="small-icon">
-                <div><img src="./assets/img/group1.png" /></div>
-                <div><img src="./assets/img/group2.png" /></div>
-                <div><img src="./assets/img/group3.png" /></div>
-                <div><img src="./assets/img/group4.png" /><span>62+</span></div>
+            <div class="content">
+              <div class="attendees">
+                <div class="attendees-icon">
+                  <img src="./assets/img/group1.png" alt="icon" />
+                </div>
+                <div class="attendees-icon">
+                  <img src="./assets/img/group2.png" alt="icon" />
+                </div>
+                <div class="attendees-icon">
+                  <img src="./assets/img/group3.png" alt="icon" />
+                </div>
+                <div class="attendees-icon">
+                  <img src="./assets/img/group4.png" alt="icon" />
+                  <div>+62</div>
+                </div>
               </div>
-              <div>
-                <div><h4>Wed, 15 Nov, 4:00 PM</h4></div>
-                <div><h2>Sights & Sounds Exhibition</h2></div>
+              <div class="text-card">
+                <p>Wed, 15 Nov, 4:00 PM</p>
+                <h2>Sights & Sounds Exhibition</h2>
               </div>
             </div>
           </div>
           <div class="card">
             <div class="img">
-              <img src="./assets/img/card2.png" alt="Event" />
+              <img
+                src="https://i.pinimg.com/564x/38/56/67/385667987c75db6c26e22bb0f88583d3.jpg"
+                alt="Event"
+              />
             </div>
-            <div class="card-content-category">
-              <div class="small-icon">
-                <div><img src="./assets/img/group1.png" /></div>
-                <div><img src="./assets/img/group2.png" /></div>
-                <div><img src="./assets/img/group3.png" /></div>
-                <div><img src="./assets/img/group4.png" /><span>62+</span></div>
+            <div class="content">
+              <div class="attendees">
+                <div class="attendees-icon">
+                  <img src="./assets/img/group1.png" alt="icon" />
+                </div>
+                <div class="attendees-icon">
+                  <img src="./assets/img/group2.png" alt="icon" />
+                </div>
+                <div class="attendees-icon">
+                  <img src="./assets/img/group3.png" alt="icon" />
+                </div>
+                <div class="attendees-icon">
+                  <img src="./assets/img/group4.png" alt="icon" />
+                  <div>+62</div>
+                </div>
               </div>
-              <div>
-                <div><h4>Wed, 15 Nov, 4:00 PM</h4></div>
-                <div><h2>See it in Gold Class</h2></div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="img">
-              <img src="./assets/img/card1.png" alt="Event" />
-            </div>
-            <div class="card-content-category">
-              <div class="small-icon">
-                <div><img src="./assets/img/group1.png" /></div>
-                <div><img src="./assets/img/group2.png" /></div>
-                <div><img src="./assets/img/group3.png" /></div>
-                <div><img src="./assets/img/group4.png" /><span>62+</span></div>
-              </div>
-              <div>
-                <div><h4>Wed, 15 Nov, 4:00 PM</h4></div>
-                <div><h2>Sights & Sounds Exhibition</h2></div>
+              <div class="text-card">
+                <p>Wed, 15 Nov, 4:00 PM</p>
+                <h2>Sights & Sounds Exhibition</h2>
               </div>
             </div>
           </div>
         </div>
-        <div class="right-btn">
-          <button class="btn primary">→</button>
-        </div>
+        <button class="right"><i class="fas fa-arrow-right"></i></button>
       </div>
-      <div class="btn-category">
-        <button class="btn transparent">←</button>
-        <button class="btn primary">→</button>
+      <div class="hidden-btn">
+        <button class="left"><i class="fas fa-arrow-left"></i></button>
+        <button class="left"><i class="fas fa-arrow-right"></i></button>
       </div>
-    </div>
-    <!-- end Cateory -->
+    </section>
 
-    <!-- start partner -->
-    <div class="partner">
+    <section class="partner">
       <div class="small-title">
-        <div>
-          <hr />
-        </div>
-        <div>
-          <p>PARTNER</p>
-        </div>
+        <hr />
+        <p>PARTNER</p>
       </div>
-      <div class="title">
-        <h1>Our Trusted Partners</h1>
-      </div>
-      <div class="sub-title">
+      <div class="title">Our Trusted Partners</div>
+      <div class="content">
         <p>By companies like :</p>
+        <div class="img-partner">
+          <img src="./assets/img/pt1.png" alt="partner" />
+          <img src="./assets/img/pt2.png" alt="partner" />
+          <img src="./assets/img/pt3.png" alt="partner" />
+          <img src="./assets/img/pt4.png" alt="partner" />
+          <img src="./assets/img/pt5.png" alt="partner" />
+          <img src="./assets/img/pt6.png" alt="partner" />
+        </div>
       </div>
-      <div class="partner-img">
-        <div><img src="./assets/img/Icon-01.png" alt="partner" /></div>
-        <div><img src="./assets/img/Icon-02.png" alt="partner" /></div>
-        <div><img src="./assets/img/Icon-03.png" alt="partner" /></div>
-        <div><img src="./assets/img/Icon-04.png" alt="partner" /></div>
-        <div><img src="./assets/img/Icon-05.png" alt="partner" /></div>
-        <div><img src="./assets/img/Icon-06.png" alt="partner" /></div>
-      </div>
-    </div>
-    <!-- end partner -->
+    </section>
 
-    <!-- Start footer -->
     <div id="footer"></div>
-    <!-- End footer -->
 
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/navbar-home.js"></script>
+    <script src="./assets/js/footer.js"></script>
     <script>
-      // to login
-      const toLogin = document.getElementById("to-login");
-      toLogin.onclick = () => {
-        window.location = "./login.html";
-      };
-
-      // list event
-      const listEvent = document.getElementById("list-events");
-
-      const arrEvent = [
+      const result = document.getElementById("wrapper-event");
+      const data = [
         {
-          name: "Sights & Sounds Exhibition",
+          title: "90’z Screen Print Eventt",
+          img: "https://i.pinimg.com/564x/dc/4c/80/dc4c80e2e37fb1fb37dd3b098eaafee8.jpg",
           date: "Wed, 15 Nov, 4:00 PM",
-          img: "./assets/img/card2.png",
         },
         {
-          name: "live Music",
+          title: "Festival 2024 barsama",
+          img: "https://i.pinimg.com/564x/b6/5b/66/b65b66e5707e73d032773d74c1d7479f.jpg",
           date: "Wed, 15 Nov, 4:00 PM",
-          img: "./assets/img/music1.jpg",
-        },
-        {
-          name: "Stand Up Comedy",
-          date: "Wed, 15 Nov, 4:00 PM",
-          img: "./assets/img/stand-up-comedy.jpg",
-        },
-        {
-          name: "Eat Party",
-          date: "Wed, 20 Nov, 4:00 PM",
-          img: "./assets/img/eat.jpg",
         },
       ];
 
-      arrEvent.forEach((event) => {
-        const linkEvent = document.createElement("a");
-        linkEvent.setAttribute("href", "./event.html");
+      data.forEach((i) => {
+        const card = document.createElement("div");
+        card.setAttribute("class", "card");
 
-        const cardEvent = document.createElement("div");
-        cardEvent.classList.add("card");
-        linkEvent.appendChild(cardEvent);
-
-        const imgBg = document.createElement("div");
-        imgBg.classList.add("img-bg");
         const img = document.createElement("img");
-        img.setAttribute("src", event.img);
-        img.setAttribute("alt", event.name);
-        imgBg.appendChild(img);
+        img.setAttribute("src", i.img);
+        img.setAttribute("alt", i.title);
+        card.appendChild(img);
+        const content = document.createElement("div");
+        content.setAttribute("class", "content");
+        const dateContent = document.createElement("div");
+        dateContent.setAttribute("class", "date-content");
+        dateContent.innerText = i.date;
+        content.appendChild(dateContent);
 
-        const contentCard = document.createElement("div");
-        contentCard.classList.add("content-card");
+        const titleContent = document.createElement("div");
+        titleContent.setAttribute("class", "title-event");
+        titleContent.innerText = i.title;
+        content.appendChild(titleContent);
 
-        const dateEvent = document.createElement("div");
-        dateEvent.classList.add("date-event");
-        const h4Event = document.createElement("h4");
-        h4Event.textContent = event.date;
-        dateEvent.appendChild(h4Event);
+        const attendees = document.createElement("div");
+        attendees.setAttribute("class", "attendees");
+        attendees.innerHTML = `<div class="attendees-icon">
+                <img src="./assets/img/group1.png" alt="icon" />
+              </div>
+              <div class="attendees-icon">
+                <img src="./assets/img/group2.png" alt="icon" />
+              </div>
+              <div class="attendees-icon">
+                <img src="./assets/img/group3.png" alt="icon" />
+              </div>
+              <div class="attendees-icon">
+                <img src="./assets/img/group4.png" alt="icon" />
+                <div>+62</div>
+              </div>`;
+        content.appendChild(attendees);
 
-        const nameEvent = document.createElement("div");
-        nameEvent.classList.add("name-event");
-        const h2Event = document.createElement("h2");
-        h2Event.textContent = event.name;
-        nameEvent.appendChild(h2Event);
-
-        const smallIcon = document.createElement("div");
-        smallIcon.classList.add("small-icon");
-        const icon = [
-          "./assets/img/group1.png",
-          "./assets/img/group2.png",
-          "./assets/img/group3.png",
-          "./assets/img/group4.png",
-        ];
-        icon.forEach((i) => {
-          const iconContainer = document.createElement("div");
-          const iconPic = document.createElement("img");
-          iconPic.setAttribute("src", i);
-          iconPic.setAttribute("alt", "icon");
-          iconContainer.appendChild(iconPic);
-          smallIcon.appendChild(iconContainer);
-        });
-
-        contentCard.appendChild(dateEvent);
-        contentCard.appendChild(nameEvent);
-        contentCard.appendChild(smallIcon);
-
-        cardEvent.appendChild(imgBg);
-        cardEvent.appendChild(contentCard);
-
-        listEvent.appendChild(linkEvent);
+        card.appendChild(content);
+        result.appendChild(card);
       });
 
-      // menu navbar
-      const menu = document.getElementById("menuHidden");
-      const centerNav = document.getElementById("center");
-      const rightNav = document.getElementById("right");
-      menu.onclick = () => {
-        if (centerNav.getAttribute("style")) {
-          centerNav.removeAttribute("style");
-        } else {
-          centerNav.setAttribute("style", "display: none");
-        }
-        if (rightNav.getAttribute("style")) {
-          rightNav.removeAttribute("style");
-        } else {
-          rightNav.setAttribute("style", "display: none");
-        }
-      };
+      const card = document.getElementById('card');
+      card.addEventListener('click',()=>{
+        window.location = '/event.html'
+      })
     </script>
   </body>
 </html>
