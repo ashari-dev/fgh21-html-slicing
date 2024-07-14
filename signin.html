@@ -10,7 +10,7 @@
   <body>
     <div class="container-sign">
       <div class="left">
-        <img src="./assets/img/hero.png" alt="img">
+        <img src="./assets/img/hero.png" alt="img" />
       </div>
       <div class="right">
         <div>
@@ -23,20 +23,30 @@
             <p>Hi, Welcome back to Urticket!</p>
           </div>
 
-          <form action="" class="form-login">
+          <form id="form" class="form-login">
             <div>
-              <input type="text" id="username" placeholder="username" />
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="username"
+              />
             </div>
             <div>
-              <input type="email" id="email" placeholder="Email" />
+              <input type="email" name="email" id="email" placeholder="Email" />
             </div>
             <div>
-              <input type="password" id="password" placeholder="Password" />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+              />
               <i class="far fa-eye"></i>
             </div>
             <a href="#">Forget Password?</a>
             <div class="btn">
-              <button>Sign In</button>
+              <button type="submit">Sign In</button>
             </div>
           </form>
 
@@ -51,8 +61,26 @@
       </div>
     </div>
     <div id="footer"></div>
-    <script type="module">
-      import { footer, loadFooter } from "./assets/js/script.js";
+    <script src="./assets/js/footer.js"></script>
+    <script>
+      const form = document.getElementById("form");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const username = e.target.username.value;
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+
+        if (
+          email === "admin@admin.com" &&
+          username === "admin123" &&
+          password === "admin#1234"
+        ) {
+          window.location = "/";
+        } else {
+          window.alert("Gunakan data yang sesuai");
+        }
+      });
     </script>
   </body>
 </html>
